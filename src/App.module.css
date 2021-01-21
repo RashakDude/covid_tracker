@@ -1,9 +1,10 @@
 body {
-    background-color: azure;
+    background-color:snow;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
