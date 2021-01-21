@@ -33,7 +33,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
         }}
         options={{
           legend: { display: false },
-          title: { display: true, text: `Current state in ${country}` },
+          title: { display: true, text: `Current status in ${country}` },
         }}
       />
     ) : null
@@ -47,19 +47,20 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           datasets: [{
             data: dailyData.map((data) => data.confirmed),
             label: 'Infected',
-            borderColor: '#3333ff',
+            borderColor: 'blue',
+            backgroundColor: 'rgba(0,0,255,0.2)',
             fill: true,
           }, {
             data: dailyData.map((data) => data.deaths),
             label: 'Deaths',
             borderColor: 'red',
-            backgroundColor: 'rgba(255, 0, 0, 0.5)',
+            backgroundColor: 'rgba(255, 0, 0, 0.2)',
             fill: true,
           },  {
             data: dailyData.map((data) => data.recovered),
             label: 'Recovered',
             borderColor: 'green',
-            backgroundColor: 'rgba(0, 255, 0, 0.5)',
+            backgroundColor: 'rgba(0, 255, 0, 0.2)',
             fill: true,
           },
           ],

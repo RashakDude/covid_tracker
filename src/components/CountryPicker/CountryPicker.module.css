@@ -1,5 +1,9 @@
 .formControl {
-    width: 30%;
+    width: 41%;
     margin-bottom: 30px !important;
-    padding-left: 10px;
+    background-color: #eeeeee;
   }
+
+.invert {
+  padding: 0px 10px 0px 10px;
+}
